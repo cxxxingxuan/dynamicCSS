@@ -1,0 +1,244 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin:0;
+    padding:0;
+}
+.code-wrapper{
+    flex:1;
+    height:50%;
+    padding: 16px;
+}
+.code-wrapper > #code{
+    overflow: hidden;
+    height:100%;
+}
+.preview-wrapper{
+    flex: 1;
+    height:50%;
+    position:relative;
+}
+.speed-control{
+    position:absolute;
+    border:1px solid red;
+    right:16px;
+    top:16px;
+}
+.speed-control > div{
+    margin:8px;
+    width: 60px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    background:#fff;
+    border-radius: 3px;
+    cursor:pointer;
+}
+.speed-control > .active{
+    background: #c1c1c1;
+}
+/*.SpongeBob{*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-left: -160px;*/
+    /*margin-top: -105px;*/
+/*}*/
+/*!*左右睫毛*!*/
+/*.left-eyelash{*/
+    /*width:5px;*/
+    /*height:20px;*/
+    /*background:black;*/
+    /*position:absolute;*/
+    /*left:100px;*/
+/*}*/
+/*.left-eyelash:before{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:4px;*/
+    /*height:20px;*/
+    /*background:black;*/
+    /*position:absolute;*/
+    /*left:-30px;*/
+    /*top:8px;*/
+    /*transform:rotate(-25deg)*/
+/*}*/
+/*.left-eyelash:after{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:4px;*/
+    /*height:20px;*/
+    /*background:black;*/
+    /*position:absolute;*/
+    /*left:30px;*/
+    /*top:7px;*/
+    /*transform:rotate(25deg)*/
+/*}*/
+/*.right-eyelash{*/
+    /*width:4px;*/
+    /*height:20px;*/
+    /*background:black;*/
+    /*position:absolute;*/
+    /*left:215px;*/
+/*}*/
+/*.right-eyelash:before{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:4px;*/
+    /*height:20px;*/
+    /*background:black;*/
+    /*position:absolute;*/
+    /*left:-30px;*/
+    /*top:8px;*/
+    /*transform:rotate(-25deg)*/
+/*}*/
+/*.right-eyelash:after{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:4px;*/
+    /*height:20px;*/
+    /*background:black;*/
+    /*position:absolute;*/
+    /*left:30px;*/
+    /*top:7px;*/
+    /*transform:rotate(25deg)*/
+/*}*/
+/*!*左右眼睛*!*/
+/*.left-eye{*/
+    /*width:100px;*/
+    /*height:100px;*/
+    /*background:#fff;*/
+    /*border-radius:50%;*/
+    /*border:3px solid;*/
+    /*position:absolute;*/
+    /*left:50px;*/
+    /*top:20px;*/
+    /*z-index:1;*/
+/*}*/
+/*.left-eye:before{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:50px;*/
+    /*height:50px;*/
+    /*background:#4af;*/
+    /*z-index:1;*/
+    /*border-radius:50%;*/
+    /*border:2px solid;*/
+    /*position:absolute;*/
+    /*left:40px;*/
+    /*top:25px;*/
+/*}*/
+/*.left-eye:after{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:30px;*/
+    /*height:30px;*/
+    /*background:black;*/
+    /*border-radius:50%;*/
+    /*position:absolute;*/
+    /*left:57px;*/
+    /*top:38px;*/
+    /*z-index:1;*/
+/*}*/
+/*.right-eye{*/
+    /*width:100px;*/
+    /*height:100px;*/
+    /*background:#fff;*/
+    /*border-radius:50%;*/
+    /*border:3px solid;*/
+    /*position:absolute;*/
+    /*left:165px;*/
+    /*top:20px;*/
+    /*z-index:1;*/
+/*}*/
+/*.right-eye:before{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:50px;*/
+    /*height:50px;*/
+    /*background:#4af;*/
+    /*z-index:1;*/
+    /*border-radius:50%;*/
+    /*border:2px solid;*/
+    /*position:absolute;*/
+    /*left:5px;*/
+    /*top:25px;*/
+/*}*/
+/*.right-eye:after{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*width:30px;*/
+    /*height:30px;*/
+    /*background:black;*/
+    /*border-radius:50%;*/
+    /*position:absolute;*/
+    /*left:13px;*/
+    /*top:38px;*/
+    /*z-index:1;*/
+
+/*}*/
+/*!*鼻子*!*/
+/*.nose{*/
+    /*width:50px;*/
+    /*height:70px;*/
+    /*border-radius: 50%;*/
+    /*background:#000;*/
+    /*transform: rotate(10deg);*/
+    /*position:absolute;*/
+    /*top:80px;*/
+    /*left:135px;*/
+    /*z-index:1;*/
+/*}*/
+/*.nose > .nose-content{*/
+    /*width:44px;*/
+    /*height:65px;*/
+    /*background:#f1db5f;*/
+    /*border-radius: 50%;*/
+    /*position:relative;*/
+    /*top:6px;*/
+    /*left:3px;*/
+    /*z-index:;*/
+/*}*/
+/*!*嘴巴*!*/
+/*.mouth{*/
+    /*width:280px;*/
+    /*height:80px;*/
+    /*background:#000;*/
+    /*border-radius:50%;*/
+    /*position:absolute;*/
+    /*top:100px;*/
+    /*left:24px;*/
+    /*z-index：-1；*/
+/*}*/
+/*.mouth > .mouth-content{*/
+    /*width:300px;*/
+    /*height:80px;*/
+    /*background:#f1db5f;*/
+    /*border-radius:50%;*/
+    /*position:absolute;*/
+    /*top:-3px;*/
+    /*left:-10px*/
+/*}*/
+/*!*牙齿*!*/
+/*.left-tooth{*/
+    /*width:25px;*/
+    /*height:27px;*/
+    /*background:#fff;*/
+    /*border:2px solid;*/
+    /*border-radius:5px;*/
+    /*position:absolute;*/
+    /*left:125px;*/
+    /*top:178px;*/
+    /*transform:rotate(2deg)*/
+/*}*/
+/*.right-tooth{*/
+    /*width:25px;*/
+    /*height:27px;*/
+    /*background:#fff;*/
+    /*border:2px solid;*/
+    /*border-radius:5px;*/
+    /*position:absolute;*/
+    /*left:165px;*/
+    /*top:178px;*/
+/*}*/
